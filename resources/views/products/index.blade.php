@@ -30,7 +30,7 @@
                             {{ $product->stock }}
                         </td>
                         <td>
-                            {{ $product->update_at }}
+                            {{ $product->updated_at }}
                         </td>
                         <!-- Botones de acción VER, EDITAR y ELIMINAR -->
                     </tr>
