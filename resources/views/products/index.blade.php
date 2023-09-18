@@ -3,6 +3,14 @@
 @section( 'title', 'Listado de Productos' )
 
 @section( 'content' )
+    @if ( session( 'status' ) )
+        <div class="alert alert-sucess">
+            {{ session( 'status' ) }}
+        </div>
+    @endif
+
+    <a href="{{ route( 'products.create' ) }}" class="btn btn-primary">Agregar</a>
+
     @if ($products->count())
         <table class="table table-hover">
             <thead>
@@ -30,9 +38,12 @@
                             {{ $product->stock }}
                         </td>
                         <td>
-                            {{ $product->update_at }}
+                            {{ $product->updated_at }}
                         </td>
                         <!-- Botones de acción VER, EDITAR y ELIMINAR -->
+                        <td>
+                            
+                        </td>
                     </tr>
                 @endforeach
             </tbody>
