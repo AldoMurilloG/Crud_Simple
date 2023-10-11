@@ -44,7 +44,7 @@
                         <td>
                             <div class="btn-group" role="group" aria-label="Basic example">
                                 
-                                <a href="{{ route( 'products.show', $product->id) }}"><button type="button" class="btn btn-primary">Ver</button></a>
+                                <a href="{{ route( 'products.show', $product->id) }}"><button type="button" class="btn btn-info">Ver</button></a>
 
                                 <a href="{{ route( 'products.edit', $product->id) }}"><button type="button" class="btn btn-primary">Editar</button></a>
                                 
